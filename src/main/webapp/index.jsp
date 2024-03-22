@@ -48,12 +48,32 @@
 <body>
     <div class="login-container">
         <h2>Login</h2>
-        <form action="#" method="post">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
+        <form id="loginForm">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
             <button type="submit">Login</button>
         </form>
     </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // You can add your authentication logic here (e.g., sending a request to a server)
+
+            // For demonstration purposes, assuming login is successful
+            // Redirect to home page and display greeting message
+            var greeting = "Hello " + username + ", good morning!";
+            var content = "Welcome to our website.";
+
+            // You can replace this with the URL of your home page
+            var homePageUrl = "home.html";
+            // Redirect to the home page with greeting message as URL parameter
+            window.location.href = homePageUrl + "?greeting=" + encodeURIComponent(greeting) + "&content=" + encodeURIComponent(content);
+        });
+    </script>
 </body>
 </html>
 
