@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Welcome</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,7 +15,7 @@
             align-items: center;
             height: 100vh;
         }
-        .login-container {
+        .container {
             background-color: #fff;
             padding: 30px;
             border-radius: 10px;
@@ -23,50 +23,40 @@
             width: 400px;
             text-align: center;
         }
-        .login-container h2 {
+        h1 {
             margin-top: 0;
-            margin-bottom: 20px;
             color: #333;
-            font-size: 24px;
-        }
-        .login-container form {
-            display: flex;
-            flex-direction: column;
-        }
-        .login-container form input {
+            font-size: 36px;
             margin-bottom: 20px;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-            transition: border-color 0.3s ease-in-out;
         }
-        .login-container form input:focus {
-            border-color: #007bff;
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 30px;
         }
-        .login-container form button {
-            padding: 12px;
+        .btn {
+            padding: 12px 24px;
             background-color: #007bff;
             color: #fff;
             border: none;
             border-radius: 5px;
-            font-size: 16px;
+            font-size: 18px;
             cursor: pointer;
             transition: background-color 0.3s ease-in-out;
+            text-decoration: none;
+            display: inline-block;
         }
-        .login-container form button:hover {
+        .btn:hover {
             background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="home.html" method="post">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
+    <div class="container">
+        <h1>Welcome</h1>
+        <p>Experience a world of possibilities with our platform. Explore, connect, and create like never before.</p>
+        <a href="#" class="btn">Get Started</a>
     </div>
 </body>
 </html>
