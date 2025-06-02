@@ -207,7 +207,7 @@
   </section>
 
   <footer style="margin-top: 2rem; font-style: italic; color: #666;">
-    <p>Signature: Marri Tharun</p>
+    <p>Signature: Marri Tharun.</p>
   </footer>
 
 </body>
